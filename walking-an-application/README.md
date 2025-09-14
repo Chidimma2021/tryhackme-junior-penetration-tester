@@ -67,7 +67,7 @@ I examined the HTML, CSS, and JavaScript. Key findings:
 - This prevented the red popup from disappearing, revealing a flag.
 
 📸 Screenshot:  
-![Debugger](Screenshot%202025-09-06%20045730_1.jpg)
+![Debugger](Screenshot%202025-09-06%20050520_1.jpg)
 
 ---
 
@@ -77,7 +77,7 @@ I examined the HTML, CSS, and JavaScript. Key findings:
 - Tracked the request to its destination and discovered another flag.
 
 📸 Screenshot:  
-![Network](Screenshot%202025-09-06%20050520_1.jpg)
+![Network](Screenshot%202025-09-06%20052716_1.jpg)
 
 ---
 
