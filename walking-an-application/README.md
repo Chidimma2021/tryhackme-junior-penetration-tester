@@ -91,5 +91,4 @@ I practiced:
 
 ---
 
-### Extra screenshot (if you want to show more)
-![Extra Screenshot](Screenshot%202025-09-06%20052716_1.jpg)
+
