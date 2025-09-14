@@ -34,7 +34,7 @@ I explored the Acme IT Support site and noted down important features:
 | Logout            | `/customers/logout` | Logs out the user |
 
 📸 Screenshot:  
-![Acme Homepage](./screenshots/homepage.png)
+![Acme Homepage](Screenshot%202025-09-05%20065909_1.jpg)
 
 ---
 
@@ -46,7 +46,7 @@ I examined the HTML, CSS, and JavaScript. Key findings:
 - Identified the **framework in use** and version info (outdated).
 
 📸 Screenshot:  
-![Page Source](./screenshots/pagesource.png)
+![Page Source](Screenshot%202025-09-05%20070441_1.jpg)
 
 ---
 
@@ -56,7 +56,7 @@ I examined the HTML, CSS, and JavaScript. Key findings:
 - Revealed hidden content and captured a flag.
 
 📸 Screenshot:  
-![Inspector](./screenshots/inspector.png)
+![Inspector](Screenshot%202025-09-06%20045128_1.jpg)
 
 ---
 
@@ -67,7 +67,7 @@ I examined the HTML, CSS, and JavaScript. Key findings:
 - This prevented the red popup from disappearing, revealing a flag.
 
 📸 Screenshot:  
-![Debugger](./screenshots/debugger.png)
+![Debugger](Screenshot%202025-09-06%20045730_1.jpg)
 
 ---
 
@@ -77,7 +77,7 @@ I examined the HTML, CSS, and JavaScript. Key findings:
 - Tracked the request to its destination and discovered another flag.
 
 📸 Screenshot:  
-![Network](./screenshots/network.png)
+![Network](Screenshot%202025-09-06%20050520_1.jpg)
 
 ---
 
@@ -90,3 +90,6 @@ I practiced:
 - Tracking background requests via **Network tab**
 
 ---
+
+### Extra screenshot (if you want to show more)
+![Extra Screenshot](Screenshot%202025-09-06%20052716_1.jpg)
