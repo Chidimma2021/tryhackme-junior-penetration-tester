@@ -56,7 +56,7 @@ I examined the HTML, CSS, and JavaScript. Key findings:
 - Revealed hidden content and captured a flag.
 
 📸 Screenshot:  
-![Inspector](Screenshot%202025-09-06%20045128_1.jpg)
+![Inspector](Screenshot%202025-09-06%20045730_1.jpg)
 
 ---
 
