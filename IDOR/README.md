@@ -22,7 +22,10 @@ If changing `user_id=1305` to `user_id=1000` lets you view another user’s prof
 
 
 📷 Screenshot:  
-`![IDOR - account request](./screenshots/idor-account-request.png)`
+`![IDOR Example](Screenshot%202025-09-12%20193431.jpg)
+
+`![IDOR Example](Screenshot%202025-09-12%20193539.jpg)
+
 
 ---
 
@@ -54,4 +57,28 @@ IDORs are not always obvious in the browser address bar — they can hide in:
 - **JavaScript files** (endpoints referenced in scripts)  
 - **Hidden parameters** added during development (parameter mining)  
 
-Example: `/user/details` may use `user_id` as an optional parameter; if the endpoint accepts `user_id` and returns data based on it without verifying ownership, it’s vulnerable:
+Example: `/user/details` may use `user_id` as an optional parameter; if the endpoint accepts `user_id` and returns data based on it without verifying ownership, it’s vulnerable:/user/details?user_id=12
+
+---
+
+## 6. Lab steps performed (summary)
+1. Started the AttackBox and opened the lab URL: `https://LAB_WEB_URL.p.thmlabs.com`.  
+2. Created a customer account and logged in.  
+3. Opened DevTools → Network and refreshed **Your Account**. Observed call to:
+
+/api/v1/customer?id={user_id}
+
+which returned JSON with `id`, `username`, and `email`. (screenshot above)  
+4. Manipulated the `id` parameter to `1` and `3` (as required by the lab). Verified whether the account data for those IDs was returned while still authenticated as the lab account.  
+
+📷 Screenshot 
+`![IDOR Example](Screenshot%202025-09-12%20194923.jpg)
+
+`![IDOR Example](Screenshot%202025-09-12%20195533.jpg)
+
+
+
+
+
+
+
