@@ -22,8 +22,7 @@ The `robots.txt` file instructs search engines on which pages should or should n
 As penetration testers, this can reveal sensitive paths (e.g., `/admin`, `/backup`).  
 
 📷 Screenshot:  
-![Robots.txt](./screenshots/robots-txt.png)
-
+![Robots.txt](Screenshot%202025-09-11%20175334.jpg)
 ---
 
 ## 3. Favicon
@@ -34,9 +33,6 @@ Sometimes default favicons remain from frameworks, which can fingerprint technol
 Unlike `robots.txt`, the `sitemap.xml` file lists all pages the site owner *wants* indexed.  
 This can reveal old or hidden pages.  
 
-📷 Screenshot:  
-![Sitemap](.
-
 ---
 
 ## 5. HTTP Headers
@@ -44,15 +40,13 @@ When making requests, servers respond with HTTP headers.
 These may expose server versions, frameworks, or scripting languages in use.  
 
 📷 Screenshot:  
-![Headers](./screenshots/headers.png)
+![Headers](Screenshot%202025-09-11%20182005.jpg)
 
 ---
 
 ## 6. Framework Stack
 By analyzing favicons, headers, or page source, we can often identify the framework (e.g., WordPress, Laravel).  
 Once identified, known vulnerabilities can be researched.  
-
-*(No screenshot for this step.)*
 
 ---
 
@@ -64,22 +58,16 @@ Examples:
 - **crt.sh** (SSL certificate data)  
 - **GitHub search** (public repos with credentials or code)  
 
-*(No screenshot for this step.)*
-
 ---
 
 ## 8. Wappalyzer
 Wappalyzer is a browser extension/online tool that identifies website technologies (frameworks, CMS, analytics, payment processors, etc.).  
-
-*(No screenshot for this step.)*
 
 ---
 
 ## 9. Wayback Machine
 An internet archive that stores historical snapshots of websites.  
 Helpful to uncover old but still active endpoints.  
-
-*(No screenshot for this step.)*
 
 ---
 
@@ -96,21 +84,15 @@ Amazon S3 allows public file hosting.
 Misconfigured S3 buckets may leak sensitive files.  
 Format: `http(s)://{name}.s3.amazonaws.com`.  
 
-*(No screenshot for this step.)*
-
 ---
 
 ## 12. Automated Discovery
 Instead of manual checks, tools like **ffuf**, **dirb**, and **gobuster** use wordlists to brute-force hidden directories and files.  
 
 📷 Screenshot:  
-![Automated discovery](./screenshots/automated-discovery.png)
+![Automated discovery](Screenshot%202025-09-11%20185113.jpg)
 
 ---
-
-## Room Completion
-📷 Screenshot:  
-![Room completed](./screenshots/room-complete.png)
 
 ---
 
@@ -118,9 +100,6 @@ Instead of manual checks, tools like **ffuf**, **dirb**, and **gobuster** use wo
 ```bash
 # Get verbose headers
 curl -v http://MACHINE_IP
-
-# Download & hash favicon
-curl https://static-labs.tryhackme.cloud/sites/favicon/images/favicon.ico | md5sum
 
 # Directory brute-force examples
 ffuf -w /usr/share/wordlists/SecLists/Discovery/Web-Content/common.txt -u http://MACHINE_IP/FUZZ
@@ -130,25 +109,4 @@ gobuster dir --url http://MACHINE_IP/ -w /usr/share/wordlists/SecLists/Discovery
 
 ---
 
-Key Takeaways
-
-Sensitive content often hides in plain sight (robots.txt, old files, backups).
-
-Automated tools + OSINT significantly expand discovery.
-
-Server headers and favicons can fingerprint technology stacks.
-
-Misconfigurations (S3, GitHub repos, exposed backups) can be critical.
-
-
-
----
-
-✅ Completed in TryHackMe lab (authorized environment).
-
----
-
-✨ This keeps your **1–12 structure intact**, but formatted cleanly with headers, bolding, and screenshots in the right places.  
-
-Do you also want me to create a **shorter `notes.md` template** inside the same folder so you can log commands + outputs (like a lab diary), or just keep everything in the `README.md`?
 
