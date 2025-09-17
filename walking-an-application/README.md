@@ -1,4 +1,4 @@
-# TryHackMe – Walking an Application
+s# TryHackMe – Walking an Application
 
 In this room, I learned how to manually review a web application for security issues using **only in-built browser tools**. Automated scanners miss a lot, so this room helped me practice *manual testing techniques*.
 
@@ -48,7 +48,7 @@ I examined the HTML, CSS, and JavaScript. Key findings:
 📸 Screenshot:  
 ![Page Source](Screenshot%202025-09-05%20070441_1.jpg)
 📸 Screenshot:
-![Page Source](Screenshot%202025-09-17%20043520 1.jpg)
+![Page Source](Screenshot%202025-09-17%20043520.jpg)
 
 ---
 
