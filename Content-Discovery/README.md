@@ -75,8 +75,6 @@ Helpful to uncover old but still active endpoints.
 GitHub hosts public and private repositories.  
 Searching for company names or domains may reveal exposed code, credentials, or configuration files.  
 
-*(No screenshot for this step.)*
-
 ---
 
 ## 11. S3 Buckets
