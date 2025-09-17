@@ -47,13 +47,15 @@ I examined the HTML, CSS, and JavaScript. Key findings:
 
 📸 Screenshot:  
 ![Page Source](Screenshot%202025-09-05%20070441_1.jpg)
+📸 Screenshot:
+![Page Source](Screenshot%202025-09-17%20043520 1.jpg)
 
 ---
 
 ## 4. Using Developer Tools – Inspector
 - Opened the **Inspector** to analyze live HTML/CSS.  
 - Removed the **premium content paywall** by changing `display: block` → `display: none`.  
-- Revealed hidden content and captured a flag.
+- Revealed hidden content and captured a flag.S
 
 📸 Screenshot:  
 ![Inspector](Screenshot%202025-09-06%20045730_1.jpg)
