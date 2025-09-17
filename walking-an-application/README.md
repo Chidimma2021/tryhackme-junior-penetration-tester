@@ -57,6 +57,8 @@ I examined the HTML, CSS, and JavaScript. Key findings:
 - Removed the **premium content paywall** by changing `display: block` → `display: none`.  
 - Revealed hidden content and captured a flag.S
 
+📸 Screenshot:
+![Inspector](Screenshot%202025-09-06%20045128_1.jpg)
 📸 Screenshot:  
 ![Inspector](Screenshot%202025-09-06%20045730_1.jpg)
 
