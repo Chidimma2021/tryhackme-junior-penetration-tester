@@ -82,6 +82,8 @@ ffuf -w /usr/share/wordlists/SecLists/Discovery/DNS/namelist.txt \
 
 This revealed two valid hidden subdomains in the lab.
 
+---
+
 📷 Screenshot:
 ![Virtual host](Screenshot%202025-09-11%20195202.jpg)
 
