@@ -84,7 +84,9 @@ This revealed two valid hidden subdomains in the lab.
 
 ---
 
-📷 Screenshot:
+## Virtual Host Enumeration
+📷 Screenshot:  
 ![virtual host](Screenshot%202025-09-11%20195202.jpg)
+
 
 ---
