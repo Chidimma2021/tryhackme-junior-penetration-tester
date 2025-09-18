@@ -126,23 +126,32 @@ Below are the six lab levels and how I solved them. I took **three screenshots p
 
 ### Level 5 — Filtered keywords (e.g., `script` removed)
 **Goal:** Bypass keyword removal filters that strip `script` or other words.  
-**Approach:** Use string concatenation or alternative tags (e.g., `onerror` in `<img>`) and encoded characters to bypass filters.  
-**Example final payload:** `alert('THM');` with filtered parts reconstructed or using `onerror=alert('THM')` inside `<img src=x onerror=alert('THM')>`  
+**Approach:** This level looks the same as level one, and your name also gets reflected in the same place. But if you try the <script>alert('THM');</script> payload, it won't work. When you view the page source, you'll see why.
+The word script  gets removed from your payload, that's because there is a filter that strips out any potentially dangerous words. When a word gets removed from a string, there's a helpful trick that you can try.
+**Example final Original Payload**
+<sscriptcript>alert('THM');</sscriptcript>
+**Final Payload after passing the filter** 
+<script>alert('THM');</script>
 **Screenshots:**  
-![payload Example](Screenshot%202025-09-17%20045522.jpg)
+![payload Example](Screenshot%202025-09-17%20232546.jpg)
 
-![payload Example](Screenshot%202025-09-17%20045522.jpg)
+![payload Example](Screenshot%202025-09-17%20232635.jpg)
 
-![payload Example](Screenshot%202025-09-17%20045522.jpg)
+![payload Example](Screenshot%202025-09-17%20232804.jpg)
+
+![payload Example](Screenshot%202025-09-17%20232916.jpg)
 
 ---
 
 ### Level 6 — Filtered `<` and `>` characters / attribute-based context
 **Goal:** Use tag attributes (e.g., `onload`, `onerror`) such as `src="/images/cat.jpg" onload="alert('THM');"` to trigger JS without direct `<script>` tags.  
 **Screenshots:**  
-- `screenshots/level6_input.png`  
-- `screenshots/level6_alert.png`  
-- `screenshots/level6_source.png`
+![payload Example](Screenshot%202025-09-17%20233037.jpg)
+
+![payload Example](Screenshot%202025-09-17%20233217.jpg)
+
+![payload Example](Screenshot%202025-09-17%20233411.jpg)
+
 
 ---
 
