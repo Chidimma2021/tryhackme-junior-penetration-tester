@@ -176,8 +176,8 @@ The word script  gets removed from your payload, that's because there is a filte
 2. Submit and open the ticket.  
 3. View page source (right click → View Page Source) and confirm the ticket content is placed inside a `<textarea>` element.
 
-**3.** Execute a simple proof-of-concept XSS
-1. Replace content with a simple alert payload (lab-controlled example):
+**3.Execute a simple proof-of-concept XSS**
+1. Replace content with a simple alert payload:
 
 </textarea><script>alert('THM');</script>
 
@@ -199,13 +199,15 @@ fetch() sends the data back to your listener
 
 ---
 📸 **Screenshots**
-![payload Example](Screenshot%202025-09-17%20233037.jpg)
+![payload Example](Screenshot%202025-09-17%20234312.jpg)
 
-![payload Example](Screenshot%202025-09-17%20233037.jpg)
+![payload Example](Screenshot%202025-09-18%20000003.jpg)
 
-![payload Example](Screenshot%202025-09-17%20233037.jpg)
+![payload Example](Screenshot%202025-09-17%20235916.jpg)
 
-![payload Example](Screenshot%202025-09-17%20233037.jpg)
+![payload Example](Screenshot%202025-09-17%20235828.jpg)
+
+![payload Example](Screenshot%202025-09-17%20235518.jpg)
 
 ---
 
