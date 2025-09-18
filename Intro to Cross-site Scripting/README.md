@@ -137,7 +137,7 @@ The word script  gets removed from your payload, that's because there is a filte
 
 ![payload Example](Screenshot%202025-09-17%20232635.jpg)
 
-![payload Example](Screenshot%202025-09-17%20232804.jpg)
+![payload Example](Screenshot%202025-09-17%20232809.jpg)
 
 ![payload Example](Screenshot%202025-09-17%20232916.jpg)
 
