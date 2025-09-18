@@ -129,9 +129,11 @@ Below are the six lab levels and how I solved them. I took **three screenshots p
 **Approach:** Use string concatenation or alternative tags (e.g., `onerror` in `<img>`) and encoded characters to bypass filters.  
 **Example final payload:** `alert('THM');` with filtered parts reconstructed or using `onerror=alert('THM')` inside `<img src=x onerror=alert('THM')>`  
 **Screenshots:**  
-- `screenshots/level5_input.png`  
-- `screenshots/level5_alert.png`  
-- `screenshots/level5_source.png`
+![payload Example](Screenshot%202025-09-17%20045522.jpg)
+
+![payload Example](Screenshot%202025-09-17%20045522.jpg)
+
+![payload Example](Screenshot%202025-09-17%20045522.jpg)
 
 ---
 
