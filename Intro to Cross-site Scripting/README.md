@@ -156,8 +156,9 @@ The word script  gets removed from your payload, that's because there is a filte
 ---
 
 > **Polyglot**: I tested a polyglot payload (a universal XSS string) that can often bypass multiple filters. Example polyglot used in the room (presented as a learning example only):  
-> `jaVasCript:/-//*\/'/"/**/(/* */onerror=alert('THM') )//%0D%0A...`  
-> *(See lab notes for full polyglot string)*
+> `jaVasCript:/*-/*`/*\`/*'/*"/**/(/* */onerror=alert('THM') )//%0D%0A%0d%0a//</stYle/</titLe/</teXtarEa/</scRipt/--!>\x3csVg/<sVg/oNloAd=alert('THM')//>\x3e
+**Screenshot**
+![payload Example](Screenshot%202025-09-17%20233602.jpg)
 
 ---
 
