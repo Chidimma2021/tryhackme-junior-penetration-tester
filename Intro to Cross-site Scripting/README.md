@@ -74,12 +74,14 @@ Below are the six lab levels and how I solved them. I took **three screenshots p
 
 ### Level 1 — Reflected in page text
 **Goal:** Trigger an alert with the string `THM`.  
-**Payload used:** `alert('THM')`  
+**Payload used:** <script>alert('THM')</script>`
 **Notes:** Input was reflected directly in page text. No escaping required.  
 **Screenshots:**  
-- `screenshots/level1_input.png`  
-- `screenshots/level1_alert.png`  
-- `screenshots/level1_source.png`
+![payload Example](Screenshot%202025-09-17%20045522.jpg)
+
+![payload Example](Screenshot%202025-09-17%20045621_2.jpg)
+
+![payload Example](Screenshot%202025-09-17%20050006_2.jpg)
 
 ---
 
@@ -88,9 +90,11 @@ Below are the six lab levels and how I solved them. I took **three screenshots p
 **Payload used:** `">` + `"><script>alert('THM')</script>` (example — adapt per context)  
 **Notes:** Closed the attribute then injected script.  
 **Screenshots:**  
-- `screenshots/level2_input.png`  
-- `screenshots/level2_alert.png`  
-- `screenshots/level2_source.png`
+![payload Example](Screenshot%202025-09-17%20231005.jpg)
+
+![payload Example](Screenshot%202025-09-17%20231132.jpg)
+
+![payload Example](Screenshot%202025-09-17%20231520.jpg)
 
 ---
 
@@ -98,9 +102,12 @@ Below are the six lab levels and how I solved them. I took **three screenshots p
 **Goal:** Escape the `textarea` and execute JS.  
 **Payload used:** `</textarea><script>alert('THM')</script>`  
 **Screenshots:**  
-- `screenshots/level3_input.png`  
-- `screenshots/level3_alert.png`  
-- `screenshots/level3_source.png`
+![payload Example](Screenshot%202025-09-17%20231656.jpg)
+
+![payload Example](Screenshot%202025-09-17%20231852.jpg)
+
+![payload Example](Screenshot%202025-09-17%20232047.jpg)
+
 
 ---
 
@@ -109,9 +116,11 @@ Below are the six lab levels and how I solved them. I took **three screenshots p
 **Payload used:** `';alert('THM');//`  
 **Notes:** Closed the existing string, added statement, used comment to avoid syntax errors.  
 **Screenshots:**  
-- `screenshots/level4_input.png`  
-- `screenshots/level4_alert.png`  
-- `screenshots/level4_source.png`
+![payload Example](Screenshot%202025-09-17%20232156.jpg)
+
+![payload Example](Screenshot%202025-09-17%20232320.jpg)
+
+![payload Example](Screenshot%202025-09-17%20232452.jpg)
 
 ---
 
