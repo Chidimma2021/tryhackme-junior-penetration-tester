@@ -1,8 +1,5 @@
 # TryHackMe — Cross-Site Scripting (XSS) Room  
 **Room:** Cross-Site Scripting (XSS) — Junior Penetration Tester Path  
-**Author:** Chidimma Onwuatuegwu  
-**Date:** 2025-06-XX
-
 ---
 
 ## 1. Prerequisites
